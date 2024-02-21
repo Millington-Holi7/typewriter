@@ -1,4 +1,4 @@
-const sentence = "hello there from lighthouse labs \n";
+const sentence = "hello there from lighthouse labs";
 
 for (let i = 0; i < sentence.length; i++) {
 
@@ -8,3 +8,7 @@ for (let i = 0; i < sentence.length; i++) {
   }, 50 * i)
 
 }
+
+setTimeout(() => {
+  process.stdout.write('\n');
+},  50 * sentence.length);
